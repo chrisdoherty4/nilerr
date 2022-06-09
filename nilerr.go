@@ -8,9 +8,6 @@ import (
 // E is an instance of a nil error that can be used in errors.Is() checks.
 var E = nilErr{}
 
-// Message defines the unformatted string used as the error message from nilerr.
-var Message = "%v is nil"
-
 // New creates a new nilerr error.
 func New(name string) error {
 	return nilErr{Name: name}
